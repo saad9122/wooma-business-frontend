@@ -6,7 +6,7 @@ import { API_TAGS } from "./tags";
 export const baseApi = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001/api",
+    baseUrl: process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000",
     // Include credentials if needed
     credentials: "include",
     prepareHeaders: (headers, { getState }) => {
