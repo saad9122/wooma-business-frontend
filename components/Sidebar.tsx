@@ -53,7 +53,7 @@ export function Sidebar() {
   };
 
   return (
-    <aside className="flex h-screen w-72 flex-col justify-between bg-sidebar text-sidebar-foreground border-r border-sidebar-border px-6 py-8">
+    <aside className="fixed top-0 left-0 w-64 h-screen p-4">
       {/* Logo */}
       <div>
         <div className="text-[20px] font-semibold tracking-[0.12em]">WOOMA</div>

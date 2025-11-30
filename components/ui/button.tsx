@@ -12,7 +12,7 @@ const baseClasses =
 const variantClasses: Record<NonNullable<ButtonProps["variant"]>, string> = {
   primary: "bg-primary text-primary-foreground hover:brightness-110",
   outline:
-    "border border-border bg-background text-foreground hover:bg-accent hover:text-accent-foreground",
+    "border border-border bg-background hover:bg-accent hover:text-accent-foreground",
   ghost: "text-foreground hover:bg-accent hover:text-accent-foreground",
 };
 
