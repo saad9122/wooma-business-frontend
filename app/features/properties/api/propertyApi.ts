@@ -1,5 +1,5 @@
-import { baseApi } from "../../../lib/api/baseApi";
-import { TagIds, createTags } from "../../../lib/api/tags";
+import { baseApi } from "../../../../lib/api/baseApi";
+import { TagIds, createTags } from "../../../../lib/api/tags";
 import type {
   Property,
   PropertyWithReports,
@@ -12,7 +12,7 @@ import type {
   ApiResponse,
   PaginatedResponse,
   PaginationParams,
-} from "../../../lib/api/types";
+} from "../../../../lib/api/types";
 
 export const propertyApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({

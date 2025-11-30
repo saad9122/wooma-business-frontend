@@ -1,8 +1,8 @@
 "use client"
-import { useGetPropertiesListQuery } from "@/features/properties/api/propertyApi";
-import PropertiesTable from "@/features/properties/components/table/PropertiesTable";
-import { propertiesColumn } from "@/features/properties/components/table/PropertiesTableColumns";
-import { EmptyState } from "@/features/shared/_components/EmptyState";
+import { useGetPropertiesListQuery } from "@/app/features/properties/api/propertyApi";
+import PropertiesTable from "@/app/features/properties/components/table/PropertiesTable";
+import { propertiesColumn } from "@/app/features/properties/components/table/PropertiesTableColumns";
+import { EmptyState } from "@/app/features/shared/_components/EmptyState";
 import { LoaderCircle } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 
