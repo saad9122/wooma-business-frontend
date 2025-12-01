@@ -1,5 +1,6 @@
 "use client"
 import { useGetPropertiesListQuery } from "@/app/features/properties/api/propertyApi";
+import { PropertiesActions } from "@/app/features/properties/components/PropertiesActions";
 import PropertiesTable from "@/app/features/properties/components/table/PropertiesTable";
 import { propertiesColumn } from "@/app/features/properties/components/table/PropertiesTableColumns";
 import { EmptyState } from "@/app/features/shared/_components/EmptyState";
@@ -12,11 +13,13 @@ const Properties = () => {
 
   const page = Number(searchParams.get("page")) || 1;
   const limit = Number(searchParams.get("limit")) || 10;
+  const searchQuery = searchParams.get("q") || undefined;
 
   const { data, isLoading, isFetching, error, refetch } =
     useGetPropertiesListQuery({
       page,
       limit,
+      search: searchQuery,
       sort_by: "updated_at",
       sort_order: "desc",
     });
@@ -33,6 +36,7 @@ const Properties = () => {
     <div>
       {/* <UserSearch/> */}
       {/* {data && data.data.data.length > 0 ? ( */}
+      <PropertiesActions />
       {data ? (
 
         <PropertiesTable

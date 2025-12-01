@@ -56,7 +56,7 @@ function PropertiesTable<TData, TValue>({ columns, data, total }: DataTableProps
   });
 
   return (
-    <div className="relative mt-4 p-16">
+    <div className="relative mt-4">
       {/* Table Container */}
       <div className="bg-white/95 rounded-md border border-primary-text *:overflow-hidden relative">
         
@@ -136,7 +136,7 @@ function PropertiesTable<TData, TValue>({ columns, data, total }: DataTableProps
                         </div>
                       </div>
                       <div className="text-center">
-                        <p className="text-lg font-medium text-gray-600 mb-1">No users found</p>
+                        <p className="text-lg font-medium text-gray-600 mb-1">No Properties found</p>
                         <p className="text-sm text-gray-500">Try adjusting your search criteria</p>
                       </div>
                     </div>
